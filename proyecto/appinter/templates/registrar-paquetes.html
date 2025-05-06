@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Nuevo Paquete</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/registrar-paquetes.css">
+</head>
+<body>
+    <a href="/Views/index.html"><button class="back-button">Regresar</button></a>
+    <form action="" method="get" id="register-form">
+        <i class="fa-solid fa-envelope" id="icon"></i>
+        <input type="text" placeholder="Numero De Guia" id="guide-number" autocomplete="off" required minlength="2">
+        <input type="text" placeholder="Origen" id="origin" autocomplete="off" required minlength="5">
+        <input type="text" placeholder="Destino" id="destination" autocomplete="off" required minlength="8">
+        <input type="text" placeholder="Remitente" id="sender" autocomplete="off" required minlength="8">
+        <input type="text" placeholder="Destinatario" id="addressee" autocomplete="off" required minlength="8">
+        <input type="text" placeholder="Valor declarado" id="value" autocomplete="off" required minlength="8">
+
+        <div class="selects-divs">
+            <select id="initial-state" required>
+                <option selected disabled>Estado Inicial</option>
+                <option>Repartidor</option>
+                <option>Distribuidor</option>
+            </select>
+    
+            <select id="type" required>
+                <option selected disabled>Tipo</option>
+                <option>Paquete A</option>
+                <option>Paquete b</option>
+            </select>
+        </div>
+        <button type="submit" id="register-btn">Registrar Paquete</button>
+    </form>
+<script src="/Js/registrar-paquetes.js"></script>
+</body>
+</html>

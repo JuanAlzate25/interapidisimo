@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Nuevo Usuario</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/registrar-usuarios.css">
+</head>
+<body>
+    <a href="{% url 'inicio' %}"><button class="back-button">Regresar</button></a>
+    <form method="post" id="register-form">
+        {% csrf_token %}
+        <i class="fa-solid fa-user" id="icon"></i>
+
+        <input type="text" placeholder="Nombre Completo" name="nombre" id="username" required minlength="5"> 
+        <input type="text" placeholder="Cédula" name="cedula" id="email" required minlength="5">
+        <input type="text" placeholder="Teléfono" name="telefono" required minlength="5">
+  
+    
+        <select id="type" name="rol" required>
+            <option selected disabled>Rol</option>
+            <option value="Mensajero">Mensajero</option>
+            <option value="Administrador">Administrador</option>
+        </select>
+    
+        <input type="password" placeholder="Contraseña" name="password" id="password"  required minlength="5">
+        <input type="password" placeholder="Confirmar Contraseña" name="confirm_password" id="confirm-password" required minlength="5">
+    
+        <button type="submit" id="register-btn">Registrar Usuario</button>
+    </form>
+{% if registro_exitoso %}
+<div id="modal-exito" class="modal-overlay">
+    <div class="modal-content">
+        <h2>¡Registro exitoso!</h2>
+        <p>El usuario <strong>{{ nombre }}</strong> ha sido registrado correctamente.</p>
+        <button onclick="window.location.href='{% url 'inicio' %}'" class="btn-modal">Aceptar</button>
+     </div>
+    </div>
+{% endif %}
+</body>
+</html>

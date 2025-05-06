@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Registrados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/usuarios-registrados.css">
+</head>
+<body>
+    <a href="/Views/index.html"><button class="back-button">Regresar</button></a>
+    <div id="general-container">
+        <div id="title">Usuarios Registrados</div>
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search">
+        </div>
+        <div id="packages-container">
+            <div class="package">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <p class="user">Usuario 1</p>
+                <div class="update-container">
+                    <button class="disable">Desactivar</button>
+                    <div class="update-panel hidden">
+                      <div class="disable-user-container">
+                        <p class="disable-user-text">Desea desactivar a este usuario?</p>
+                        <label class="switch">
+                          <input type="checkbox" id="switch-btn">
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                    <button class="guardar">Guardar Cambios</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="package">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <p class="user">Usuario 2</p>
+                <div class="update-container">
+                    <button class="disable">Desactivar</button>
+                    <div class="update-panel hidden">
+                      <div class="disable-user-container">
+                        <p class="disable-user-text">Desea desactivar a este usuario?</p>
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                    <button class="guardar">Guardar Cambios</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="package">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <p class="user">Usuario 3</p>
+                <div class="update-container">
+                    <button class="disable">Desactivar</button>
+                    <div class="update-panel hidden">
+                        <div class="disable-user-container">
+                          <p class="disable-user-text">Desea desactivar a este usuario?</p>
+                          <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                        <button class="guardar">Guardar Cambios</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="/Js/usuarios-registrados.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{% load static %}
+{% load base64_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicion De Paquetes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/historial-entregas.css">
+</head>
+<body>
+    <a href="../templates/index.html"><button class="back-button">Regresar</button></a>
+    <div id="general-container">
+        <div id="title">Historial Entregas</div>
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search">
+        </div>
+        <div id="packages-container">
+            <button class="date">Hoy</button>
+            <div class="package">
+                <i class="fa-solid fa-envelope" id="icon"></i>
+                <p class="package-id">#111</p>
+                <div class="update-container">
+                    <button class="details">Ver Detalles</button>
+                    <div class="update-panel hidden">
+                        <div class="packages-info">
+                            <p class="packages-text">Entrega: #1A</p>
+                            <p class="packages-text">Fecha De Entrega: 10/01/2025</p>
+                            <p class="packages-text">Comprobante: 623742</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="package">
+                <i class="fa-solid fa-envelope" id="icon"></i>
+                <p class="package-id">#222</p>
+                <div class="update-container">
+                    <button class="details">Ver Detalles</button>
+                    <div class="update-panel hidden">
+                        <div class="packages-info">
+                            <p class="packages-text">Entrega: #1B</p>
+                            <p class="packages-text">Fecha De Entrega: 15/01/2025</p>
+                            <p class="packages-text">Comprobante: 623622</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div id="packages-container">
+            <button class="date">Ayer</button>
+            <div class="package">
+                <i class="fa-solid fa-envelope" id="icon"></i>
+                <p class="package-id">#333</p>
+                <div class="update-container">
+                    <button class="details">Ver Detalles</button>
+                    <div class="update-panel hidden">
+                        <div class="packages-info">
+                            <p class="packages-text">Entrega: #1C</p>
+                            <p class="packages-text">Fecha De Entrega: 12/01/2025</p>
+                            <p class="packages-text">Comprobante: 123642</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="package">
+                <i class="fa-solid fa-envelope" id="icon"></i>
+                <p class="package-id">#444</p>
+                <div class="update-container">
+                    <button class="details">Ver Detalles</button>
+                    <div class="update-panel hidden">
+                        <div class="packages-info">
+                            <p class="packages-text">Entrega: #1D</p>
+                            <p class="packages-text">Fecha De Entrega: 17/01/2025</p>
+                            <p class="packages-text">Comprobante: 654642</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="../static/js/historial-entregas.js"></script>
+</body>
+</html>

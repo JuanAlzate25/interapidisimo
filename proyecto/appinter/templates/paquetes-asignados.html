@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes Asignados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/paquetes-asignados.css">
+</head>
+<body>
+    <a href="../templates/index.html"><button class="back-button">Regresar</button></a>
+    <div id="general-container">
+        <div id="title">Paquetes Asignados</div>
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search">
+        </div>
+        <div id="packages-container">
+          <div class="package">
+            <i class="fa-solid fa-envelope" id="icon"></i>
+            <p class="package-id">#111</p>
+            
+            <div class="update-container">
+              <button class="update">Actualizar Estado</button>
+          
+              <div class="update-panel hidden">
+                <label>Nuevo Estado:</label>
+                <select class="state-select">
+                  <option value="">Selecciona</option>
+                  <option value="recibido">Recibido</option>
+                  <option value="en_camino">En camino</option>
+                  <option value="entregado">Entregado</option>
+                </select>
+          
+                <label>Información del paquete:</label>
+                <textarea class="info-package" rows="2" placeholder="Escribe algo..."></textarea>
+          
+                <label>Adjuntar evidencia:</label>
+                <input type="file" class="adjunto">
+          
+                <button class="guardar">Guardar</button>
+              </div>
+            </div>
+          </div>
+          
+              <div class="package">
+                <i class="fa-solid fa-envelope" id="icon"></i>
+                <p class="package-id">#111</p>
+                
+                <div class="update-container">
+                  <button class="update">Actualizar Estado</button>
+              
+                  <div class="update-panel hidden">
+                    <label>Nuevo Estado:</label>
+                    <select class="state-select">
+                      <option value="">Selecciona</option>
+                      <option value="recibido">Recibido</option>
+                      <option value="en_camino">En camino</option>
+                      <option value="entregado">Entregado</option>
+                    </select>
+              
+                    <label>Información del paquete:</label>
+                    <textarea class="info-package" rows="2" placeholder="Escribe algo..."></textarea>
+              
+                    <label>Adjuntar evidencia:</label>
+                    <input type="file" class="adjunto">
+              
+                    <button class="guardar">Guardar</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="package">
+                <i class="fa-solid fa-envelope" id="icon"></i>
+                <p class="package-id">#111</p>
+                
+                <div class="update-container">
+                  <button class="update">Actualizar Estado</button>
+                  <div class="update-panel hidden">
+                    <label>Nuevo Estado:</label>
+                    <select class="state-select">
+                      <option value="">Selecciona</option>
+                      <option value="recibido">Recibido</option>
+                      <option value="en_camino">En camino</option>
+                      <option value="entregado">Entregado</option>
+                    </select>
+              
+                    <label>Información del paquete:</label>
+                    <textarea class="info-package" rows="2" placeholder="Escribe algo..."></textarea>
+              
+                    <label>Adjuntar evidencia:</label>
+                    <input type="file" class="adjunto">
+              
+                    <button class="guardar">Guardar</button>
+                  </div>
+                </div>
+              </div>
+        </div>        
+    </div>
+    <script src="../static/js/paquetes-asignados.js"></script>
+</body>
+</html>

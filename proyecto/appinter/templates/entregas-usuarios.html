@@ -1,0 +1,122 @@
+{% load static %}
+{% load base64_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes Registrados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/entregas-usuarios.css">
+</head>
+<body>
+    <a href="../templates/index.html"><button class="back-button">Regresar</button></a>
+    <div id="general-container">
+        <div id="title">Usuarios</div>
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search">
+        </div>
+        <div id="packages-container">
+            <div class="package">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <p class="user">Usuario 1</p>
+                <div class="update-container">
+                    <button class="edit">Ver Historial Entregas</button>
+                    <div class="update-panel hidden">
+                        <div class="search-box-panel">
+                            <button class="btn-search-panel"><i class="fas fa-search"></i></button>
+                            <input type="text" class="input-search-panel">
+                        </div>
+                        <div class="packages-info">
+                            <div class="package-entry">
+                                <p class="packages-text">Entrega<span class="package-info">#1A</span> <i></i></p>
+                                <div class="package-details hidden">
+                                    <p>Paquete #111</p>
+                                    <p>Fecha de entrega: 10/02/2025</p>
+                                    <p>Comprobante: 223456</p>
+                                </div>
+                            </div>
+                            <div class="package-entry">
+                                <p class="packages-text">Paquete <span class="package-info">#1B</span></p>
+                                <div class="package-details hidden">
+                                    <p>Paquete #112</p>
+                                    <p>Fecha de entrega: 20/03/2025</p>
+                                    <p>Comprobante: 624321</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="package">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <p class="user">Usuario 1</p>
+                <div class="update-container">
+                    <button class="edit">Ver Historial Entregas</button>
+                    <div class="update-panel hidden">
+                        <div class="search-box-panel">
+                            <button class="btn-search-panel"><i class="fas fa-search"></i></button>
+                            <input type="text" class="input-search-panel">
+                        </div>
+                        <div class="packages-info">
+                            <div class="package-entry">
+                                <p class="packages-text">Entrega<span class="package-info">#2A</span> <i></i></p>
+                                <div class="package-details hidden">
+                                    <p>Paquete #222</p>
+                                    <p>Fecha de entrega: 15/02/2025</p>
+                                    <p>Comprobante: 127456</p>
+                                </div>
+                            </div>
+                            <div class="package-entry">
+                                <p class="packages-text">Paquete <span class="package-info">#2B</span></p>
+                                <div class="package-details hidden">
+                                    <p>Paquete #221</p>
+                                    <p>Fecha de entrega: 25/03/2025</p>
+                                    <p>Comprobante: 657321</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="package">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <p class="user">Usuario 1</p>
+                <div class="update-container">
+                    <button class="edit">Ver Historial Entregas</button>
+                    <div class="update-panel hidden">
+                        <div class="search-box-panel">
+                            <button class="btn-search-panel"><i class="fas fa-search"></i></button>
+                            <input type="text" class="input-search-panel">
+                        </div>
+                        <div class="packages-info">
+                            <div class="package-entry">
+                                <p class="packages-text">Entrega<span class="package-info">#3A</span> <i></i></p>
+                                <div class="package-details hidden">
+                                    <p>Paquete #333</p>
+                                    <p>Fecha de entrega: 15/02/2025</p>
+                                    <p>Comprobante: 123456</p>
+                                </div>
+                            </div>
+                            <div class="package-entry">
+                                <p class="packages-text">Paquete <span class="package-info">#3B</span></p>
+                                <div class="package-details hidden">
+                                    <P>Paquete #332</P>
+                                    <p>Fecha de entrega: 27/03/2025</p>
+                                    <p>Comprobante: 154321</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="../static/js/entregas-usuarios.js"></script>
+</body>
+</html>
